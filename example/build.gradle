@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.exa.myframe"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile project(':framelib_rrm')
+
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    //compile 'com.github.bumptech.glide:glide:3.6.0'
+
+    //屏幕适配
+    compile 'com.zhy:autolayout:1.4.5'
+//    //ForRecyclerView
+//    compile 'com.zhy:base-rvadapter:2.0.0'
+//    //ForListView
+//    compile 'com.zhy:base-adapter:2.1.0'
+}

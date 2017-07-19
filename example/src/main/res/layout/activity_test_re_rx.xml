@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background="#00f"-->
+
+    <Button
+        android:id="@+id/btn_test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="测试使用Retrofit和RxJava请求网络"/>
+    <!--android:layout_marginTop="30dp"-->
+
+    <Button
+        android:id="@+id/btn_test2"
+        android:layout_below="@+id/btn_test1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="onButtonClick"
+        android:text="测试使用RxJava进行本地异步耗时操作"/>
+
+    <Button
+        android:id="@+id/btn_test3"
+        android:layout_below="@+id/btn_test2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="onButtonClick"
+        android:text="测试使用RxJava进行本地非耗时操作，获得字符串"/>
+
+    <Button
+        android:id="@+id/btn_test4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_test3"
+        android:onClick="onButtonClick"
+        android:text="测试不使用RxJava进行本地非耗时操作"/>
+
+    <Button
+        android:id="@+id/btn_test5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_test4"
+        android:onClick="onButtonClick"
+        android:text="测试不使用RxJava进行本地耗时操作"/>
+
+    <Button
+        android:id="@+id/btn_test6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_test5"
+        android:onClick="onButtonClick"
+        android:text="测试使用Retrofit和RxJava请求网络，有参数的情况"/>
+
+    <Button
+        android:id="@+id/btn_test7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_test6"
+        android:onClick="onButtonClick"
+        android:text="测试不通过回调，执行本地非耗时操作"/>
+
+    <Button
+        android:id="@+id/btn_test8"
+        android:layout_below="@+id/btn_test7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="onButtonClick"
+        android:text="测试使用RxJava进行本地非耗时操作，获得实体类"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="onButtonClick"
+        android:text="下一个页面"/>
+
+</RelativeLayout>
